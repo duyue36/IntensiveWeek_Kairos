@@ -3,11 +3,21 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    public Image[] itemImages = new Image[numItemSlots];
+    public static Inventory Instance   //make Inventory a singleton 
+    {
+        get; private set;
+    }
+
+    //Every item is corresponding to an image
+    public Image[] itemImages = new Image[numItemSlots];  
     public Item[] items = new Item[numItemSlots];
 
-
     public const int numItemSlots = 10;
+
+    void Awake()
+    {
+        Instance = this;
+    }
 
 
     public void AddItem(Item itemToAdd)
