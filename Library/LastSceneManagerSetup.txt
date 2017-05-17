@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scene/Proto_0_ViewControl.unity
+- path: Assets/_Scene/Proto_0_ViewControl&Inventory.unity
   isLoaded: 1
   isActive: 1

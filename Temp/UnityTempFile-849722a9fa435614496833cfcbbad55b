@@ -85,7 +85,9 @@
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
 -define:ENABLE_VSTU
-Assets/Scripts/CameraControl.cs
+Assets/Scripts/Camera/CameraControl.cs
+Assets/Scripts/Inventory/Inventory.cs
+Assets/Scripts/Inventory/Item.cs
 -r:G:\Unity5.6.03\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll
 -r:G:\Unity5.6.03\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll
 -r:G:\Unity5.6.03\Editor\Data\Mono\lib\mono\unity\UnityScript.dll
