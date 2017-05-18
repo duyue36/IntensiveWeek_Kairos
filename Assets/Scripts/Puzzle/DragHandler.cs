@@ -15,13 +15,19 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 	public int correctCoordX;
 	public int correctCoordY;
 
+    public bool fromOuterRing;
+    public bool fromMiddleRing;
+    public bool fromInnerRing;
+
 	//VISUAL FEEDBACK VALUES
 	public Color defaultColor;
 	public Color cursorOverColor;
 	public Color draggedColor;
+    public Color disabledColor;
 
-	//GAMEPLAY VALUES
-	public bool movable;
+    //GAMEPLAY VALUES
+    public bool missing;
+    public bool movable;
 	public bool correctlyPlaced;
 
 	private bool otherImageDraggedOver;
@@ -36,23 +42,44 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     private Vector2 originalPos;
 
-	private Script_CanvasSystem canvasSystem;
+	public Script_CanvasSystem canvasSystem;
 
 	public bool cursorOver;
 
 	private Vector2 originalSize;
 
+    public Transform myRectTransform;
+
+    public void Start()
+    {
+        returnToOriginalPos = true;
+        originalSize = GetComponent<RectTransform>().sizeDelta;
+
+        // -------------------------- Added by Isabelle -------------------------- //
+        myRectTransform = GetComponent<RectTransform>();
+        //ActualizeCoord();
+
+        if (!movable)
+        {
+            if (missing)
+            {
+                GetComponent<Image>().color = Color.black;
+            }
+            else
+            {
+                GetComponent<Image>().color = disabledColor;
+            }
+        }
+    }
+
+    public void ActualizeCoord()
+    {
+        currentCoordX = (int)(myRectTransform.localPosition.x + 125) / 50;
+        currentCoordY = (int)(myRectTransform.localPosition.y + 125) / 50;
+    }
 
 
-	public void Start()
-	{
-		canvasSystem = GameObject.Find ("Puzzle_Canvas").GetComponent<Script_CanvasSystem>();
-		returnToOriginalPos = true;
-		originalSize = GetComponent<RectTransform> ().sizeDelta;
-	}
-
-
-	//START DRAG
+    //START DRAG
     public void OnBeginDrag(PointerEventData eventData)
     {
         var canvas = FindInParents<Canvas>(gameObject);
@@ -124,22 +151,20 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
     {
 		var dragHandlerDragged = m_DraggingIcon.GetComponent<DragHandler> ();
 
-		foreach (GameObject image in canvasSystem.images) //Check if there is an image under the dragged image
+		foreach (DragHandler image in canvasSystem.images) //Check if there is an image under the dragged image
 		{
-			var dragHandlerTested = image.GetComponent<DragHandler>();
-
-			if (dragHandlerTested.otherImageDraggedOver == true && dragHandlerTested.movable == true)
+            if (image.otherImageDraggedOver == true && image.movable == true && image.fromInnerRing == fromInnerRing && image.fromMiddleRing == fromMiddleRing && image.fromOuterRing == fromOuterRing)
 			{
 				//switch position and coordinates
 				m_DraggingIcon.GetComponent<RectTransform>().position = image.GetComponent<RectTransform>().position;
 				image.GetComponent<RectTransform>().position = originalPos;
 				returnToOriginalPos = false;
 
-				var tempCoordX = dragHandlerTested.currentCoordX;
-				var tempCoordY = dragHandlerTested.currentCoordY;
+				var tempCoordX = image.currentCoordX;
+				var tempCoordY = image.currentCoordY;
 
-				dragHandlerTested.currentCoordX = dragHandlerDragged.currentCoordX;
-				dragHandlerTested.currentCoordY = dragHandlerDragged.currentCoordY;
+                image.currentCoordX = dragHandlerDragged.currentCoordX;
+                image.currentCoordY = dragHandlerDragged.currentCoordY;
 				dragHandlerDragged.currentCoordX = tempCoordX;
 				dragHandlerDragged.currentCoordY = tempCoordY;
 
@@ -191,15 +216,21 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
 	public void EnableCursorOver()
 	{
-		cursorOver = true;
-		GetComponent<Image> ().color = cursorOverColor;
+        if (movable)
+        {
+            cursorOver = true;
+            GetComponent<Image>().color = cursorOverColor;
+        }
 	}
 
 
 	public void DisableCursorOver()
 	{
-		cursorOver = false;
-		GetComponent<Image> ().color = defaultColor;
+        if (movable)
+        {
+            cursorOver = false;
+            GetComponent<Image>().color = defaultColor;
+        }
 	}
 
 
@@ -224,4 +255,12 @@ public class DragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 		}
 
 	}
+
+    // -------------------------- Added by Isabelle -------------------------- //
+    public void Unlocked()
+    {
+        movable = true;
+        missing = false;
+        GetComponent<Image>().color = Color.white;
+    }
 }

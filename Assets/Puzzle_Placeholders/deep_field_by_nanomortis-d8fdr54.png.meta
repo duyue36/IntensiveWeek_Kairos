@@ -1,0 +1,596 @@
+fileFormatVersion: 2
+guid: e2e52e50d8d85714c9221fbb2f73f107
+timeCreated: 1495129282
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: deep_field_by_nanomortis-d8fdr54_0
+    21300002: deep_field_by_nanomortis-d8fdr54_1
+    21300004: deep_field_by_nanomortis-d8fdr54_2
+    21300006: deep_field_by_nanomortis-d8fdr54_3
+    21300008: deep_field_by_nanomortis-d8fdr54_4
+    21300010: deep_field_by_nanomortis-d8fdr54_5
+    21300012: deep_field_by_nanomortis-d8fdr54_6
+    21300014: deep_field_by_nanomortis-d8fdr54_7
+    21300016: deep_field_by_nanomortis-d8fdr54_8
+    21300018: deep_field_by_nanomortis-d8fdr54_9
+    21300020: deep_field_by_nanomortis-d8fdr54_10
+    21300022: deep_field_by_nanomortis-d8fdr54_11
+    21300024: deep_field_by_nanomortis-d8fdr54_12
+    21300026: deep_field_by_nanomortis-d8fdr54_13
+    21300028: deep_field_by_nanomortis-d8fdr54_14
+    21300030: deep_field_by_nanomortis-d8fdr54_15
+    21300032: deep_field_by_nanomortis-d8fdr54_16
+    21300034: deep_field_by_nanomortis-d8fdr54_17
+    21300036: deep_field_by_nanomortis-d8fdr54_18
+    21300038: deep_field_by_nanomortis-d8fdr54_19
+    21300040: deep_field_by_nanomortis-d8fdr54_20
+    21300042: deep_field_by_nanomortis-d8fdr54_21
+    21300044: deep_field_by_nanomortis-d8fdr54_22
+    21300046: deep_field_by_nanomortis-d8fdr54_23
+    21300048: deep_field_by_nanomortis-d8fdr54_24
+    21300050: deep_field_by_nanomortis-d8fdr54_25
+    21300052: deep_field_by_nanomortis-d8fdr54_26
+    21300054: deep_field_by_nanomortis-d8fdr54_27
+    21300056: deep_field_by_nanomortis-d8fdr54_28
+    21300058: deep_field_by_nanomortis-d8fdr54_29
+    21300060: deep_field_by_nanomortis-d8fdr54_30
+    21300062: deep_field_by_nanomortis-d8fdr54_31
+    21300064: deep_field_by_nanomortis-d8fdr54_32
+    21300066: deep_field_by_nanomortis-d8fdr54_33
+    21300068: deep_field_by_nanomortis-d8fdr54_34
+    21300070: deep_field_by_nanomortis-d8fdr54_35
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 250
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 250
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_3
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 250
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_4
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 250
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_5
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 250
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 201
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_7
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 201
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_8
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 201
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_9
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 201
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_10
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 201
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_11
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 201
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_13
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 152
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_14
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 152
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_15
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 152
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 152
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_17
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 152
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_19
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 103
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_20
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 103
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_21
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 103
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_22
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 103
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_23
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 103
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_25
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 54
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_26
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 54
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_27
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 54
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_28
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 54
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_29
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 54
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_31
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 5
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_32
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 5
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_33
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 5
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_34
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 5
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: deep_field_by_nanomortis-d8fdr54_35
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 5
+        width: 49
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
