@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scene/Proto_0_ViewControl&Inventory.unity
+- path: Assets/_Scene/Phase_0_Investigation.unity
   isLoaded: 1
   isActive: 1
