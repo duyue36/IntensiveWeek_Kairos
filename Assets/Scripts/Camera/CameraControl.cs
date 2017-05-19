@@ -5,6 +5,11 @@ using UnityEngine;
 [AddComponentMenu("Camera-Control/3dsMax Camera Style")]
 public class CameraControl : MonoBehaviour
 {
+    public static CameraControl Instance   //make Inventory a singleton 
+    {
+        get; private set;
+    }
+
     public Transform target;
     public Vector3 targetOffset;
     public float distance = 5.0f;
@@ -29,6 +34,11 @@ public class CameraControl : MonoBehaviour
 
     void Start() { Init(); }
     void OnEnable() { Init(); }
+
+    void Awake()
+    {
+        Instance = this;
+    }
 
     public void Init()
     {

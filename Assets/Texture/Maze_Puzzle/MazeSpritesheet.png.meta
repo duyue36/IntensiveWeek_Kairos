@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: bac4f9c58c4ba714a934dbcb26dc378d
-timeCreated: 1495125645
+timeCreated: 1495146086
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -105,9 +105,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 819.3334
+        y: 820
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,9 +118,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 409
-        y: 819.3334
+        y: 820
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,9 +131,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 818
-        y: 819.3334
+        y: 820
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,9 +144,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1227
-        y: 819.3334
+        y: 820
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,9 +157,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1636
-        y: 819.3334
+        y: 820
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,9 +170,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 410.33334
+        y: 410
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,9 +183,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 409
-        y: 410.33334
+        y: 410
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,9 +196,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 818
-        y: 410.33334
+        y: 410
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,9 +209,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1227
-        y: 410.33334
+        y: 410
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,9 +222,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1636
-        y: 410.33334
+        y: 410
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,9 +235,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1.3333435
+        y: 0
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,9 +248,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 409
-        y: 1.3333435
+        y: 0
         width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,35 +261,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 818
-        y: 1.3333435
+        y: 0
         width: 409.6
-        height: 409.66666
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: MazeSpritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 1227
-        y: 1.3333435
-        width: 409.6
-        height: 409.66666
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: MazeSpritesheet_14
-      rect:
-        serializedVersion: 2
-        x: 1636
-        y: 1.3333435
-        width: 409.6
-        height: 409.66666
+        height: 410
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

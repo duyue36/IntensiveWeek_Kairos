@@ -83,6 +83,22 @@ public class Script_CanvasSystem : MonoBehaviour
                 }
             }
         }
+
+        //////////////////////////////////////////////////////////////////////////////////////
+        if (GameManager.Instance.CollarGot)
+        {
+            AddMissingPiece(1);
+        }
+        if (GameManager.Instance.KeyGot)
+        {
+            AddMissingPiece(2);
+        }
+        if (GameManager.Instance.PhoneGot)
+        {
+            AddMissingPiece(3);
+        }
+        ///////////////////////////////////////////////////////////////////////////////////////////
+
 	}
 
     //FUNCTION TO MOVE IN HIERARCHY (in order to control the rendering order)

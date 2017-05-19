@@ -59,7 +59,9 @@ public class MouseClick : MonoBehaviour{
                 {
                     if (hit.collider.transform.parent.tag == "Item")
                     {
-                        DescribeObject(hit.collider.gameObject.tag);
+                        DescribeObject(hit.collider.gameObject.tag);  // Describe the item in the scene
+
+                        CameraControl.Instance.target = hit.transform;   //focus the camera on that Item
                     }
                 }
             }
@@ -106,28 +108,34 @@ public class MouseClick : MonoBehaviour{
         if (ItemTag == "Item_Collar")
         {
             Items[0].Item_Image.GetComponent<Image>().enabled = true;
+            GameManager.Instance.CollarGot = true;
         }
         if (ItemTag == "Item_Letter")
         {
             Items[1].Item_Image.GetComponent<Image>().enabled = true;
+            GameManager.Instance.LetterGot = true;
         }
 
         if (ItemTag == "Item_Key")
         {
             Items[2].Item_Image.GetComponent<Image>().enabled = true;
+            GameManager.Instance.KeyGot = true;
         }
 
         if (ItemTag == "Item_Phone")
         {
             Items[3].Item_Image.GetComponent<Image>().enabled = true;
+            GameManager.Instance.PhoneGot = true;
         }
         if (ItemTag == "Item_Photo")
         {
             Items[4].Item_Image.GetComponent<Image>().enabled = true;
+            GameManager.Instance.PhotoGot = true;
         }
         if (ItemTag == "Item_Umbrella")
         {
             Items[5].Item_Image.GetComponent<Image>().enabled = true;
+            GameManager.Instance.UmbrellaGot = true;
         }
 
         //Inventory.Instance.AddItem(item);
@@ -144,6 +152,7 @@ public class MouseClick : MonoBehaviour{
         {
             Items[0].Item_Object.SetActive(true);
             Items[0].Item_Image.GetComponent<Image>().enabled = false;
+            GameManager.Instance.CollarGot = false;
         }
         
     }
@@ -154,6 +163,7 @@ public class MouseClick : MonoBehaviour{
         {
             Items[1].Item_Object.SetActive(true);
             Items[1].Item_Image.GetComponent<Image>().enabled = false;
+            GameManager.Instance.LetterGot = false;
         }
     }
 
@@ -163,6 +173,7 @@ public class MouseClick : MonoBehaviour{
         {
             Items[2].Item_Object.SetActive(true);
             Items[2].Item_Image.GetComponent<Image>().enabled = false;
+            GameManager.Instance.KeyGot = false;
         }
     }
 
@@ -172,6 +183,7 @@ public class MouseClick : MonoBehaviour{
         {
             Items[3].Item_Object.SetActive(true);
             Items[3].Item_Image.GetComponent<Image>().enabled = false;
+            GameManager.Instance.PhoneGot = false;
         }
     }
 
@@ -181,6 +193,7 @@ public class MouseClick : MonoBehaviour{
         {
             Items[4].Item_Object.SetActive(true);
             Items[4].Item_Image.GetComponent<Image>().enabled = false;
+            GameManager.Instance.PhotoGot = false;
         }
     }
 
@@ -190,6 +203,7 @@ public class MouseClick : MonoBehaviour{
         {
             Items[5].Item_Object.SetActive(true);
             Items[5].Item_Image.GetComponent<Image>().enabled = false;
+            GameManager.Instance.UmbrellaGot = false;
         }
     }
 

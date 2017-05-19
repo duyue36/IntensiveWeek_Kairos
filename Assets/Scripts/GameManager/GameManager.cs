@@ -10,17 +10,30 @@ public class GameManager : MonoBehaviour {
 
     public bool English;
     public bool Français;
+
+    [HideInInspector]
+    public bool CollarGot;
+    [HideInInspector]
+    public bool LetterGot;
+    [HideInInspector]
+    public bool KeyGot;
+    [HideInInspector]
+    public bool PhoneGot;
+    [HideInInspector]
+    public bool PhotoGot;
+    [HideInInspector]
+    public bool UmbrellaGot;
+
+
     void Awake()
     {
         Instance = this;
     }
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    /*
+    void Update()
+    {
+
+    }
+    */
 }
