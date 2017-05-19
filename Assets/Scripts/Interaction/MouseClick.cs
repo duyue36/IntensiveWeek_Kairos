@@ -61,7 +61,7 @@ public class MouseClick : MonoBehaviour{
                     {
                         DescribeObject(hit.collider.gameObject.tag);  // Describe the item in the scene
 
-                        CameraControl.Instance.target = hit.transform;   //focus the camera on that Item
+                        //CameraControl.Instance.target = hit.transform;   //focus the camera on that Item
                     }
                 }
             }

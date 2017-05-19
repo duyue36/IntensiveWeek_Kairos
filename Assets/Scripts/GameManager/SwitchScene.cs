@@ -21,8 +21,9 @@ public class SwitchScene : MonoBehaviour {
     {
         if(gameObject.tag == "Phase_0")
         {
-            narrativePanel.gameObject.SetActive(false); // if chance scene, make it disactive
-            SceneManager.LoadScene("Phase_1_BossRoom");
+            if (narrativePanel != null)
+                narrativePanel.gameObject.SetActive(false); // if chance scene, make it disactive
+            SceneManager.LoadScene("Phase_1_Investigation");
         }
 
         if(gameObject.tag == "Phase_1")
@@ -32,7 +33,7 @@ public class SwitchScene : MonoBehaviour {
                 narrativePanel.gameObject.SetActive(true);
             }
             
-            SceneManager.LoadScene("Phase_0_Investigation");
+            SceneManager.LoadScene("Phase_0_BossFlight");
         }
         
     }

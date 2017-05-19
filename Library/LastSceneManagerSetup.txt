@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scene/Phase_1_BossRoom.unity
+- path: Assets/_Scene/Phase_0_Investigation.unity
   isLoaded: 1
   isActive: 1

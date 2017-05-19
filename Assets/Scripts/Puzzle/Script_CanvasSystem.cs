@@ -17,6 +17,8 @@ public class Script_CanvasSystem : MonoBehaviour
     public List<DragHandler> middleRing = new List<DragHandler>();
     public List<DragHandler> innerRing = new List<DragHandler>();
 
+    public List<DragHandler> currentRing = new List<DragHandler>(); //Added by François
+
     // -------------------------- Added by Isabelle -------------------------- //
     public bool puzzleWon;
     public RawImage puzzleSolvedBlocker;
@@ -84,22 +86,83 @@ public class Script_CanvasSystem : MonoBehaviour
             }
         }
 
-        //////////////////////////////////////////////////////////////////////////////////////
-        if (GameManager.Instance.CollarGot)
+        //GIVE FEEDBACK ABOUT WHAT RING THE TILE SHOULD BE MOVED TO BY THE PLAYER ----------------------- Added by François
+        if (dragging == true)
         {
-            AddMissingPiece(1);
-        }
-        if (GameManager.Instance.KeyGot)
-        {
-            AddMissingPiece(2);
-        }
-        if (GameManager.Instance.PhoneGot)
-        {
-            AddMissingPiece(3);
-        }
-        ///////////////////////////////////////////////////////////////////////////////////////////
+            if (imageBeingDragged.GetComponent<DragHandler>().fromOuterRing == true)
+            {
+                foreach (DragHandler dragHandler in outerRing)
+                {
+                    if (!dragHandler.missing)
+                    {
+                        currentRing.Add(dragHandler);
+                    } 
+                }
+            }
+            else if (imageBeingDragged.GetComponent<DragHandler>().fromMiddleRing == true)
+            {
+                foreach (DragHandler dragHandler in middleRing)
+                {
+                    if (!dragHandler.missing)
+                    {
+                        currentRing.Add(dragHandler);
+                    }
+                }
+            }
+            else if (imageBeingDragged.GetComponent<DragHandler>().fromInnerRing == true)
+            {
+                foreach (DragHandler dragHandler in innerRing)
+                {
+                    if (!dragHandler.missing)
+                    {
+                        currentRing.Add(dragHandler);
+                    }
+                }
+            }
 
-	}
+            //Feedback on the tiles which can be switched (right ring)
+            currentRing.Remove(imageBeingDragged.GetComponent<DragHandler>());
+
+            foreach (DragHandler dragHandler in images)
+            {
+				if (!currentRing.Contains (dragHandler) && !dragHandler.missing) {
+					dragHandler.GetComponent<Image>().color = dragHandler.disabledColor;
+				}  
+            }
+        }
+        //Clear the list of currently switchable tiles
+        else if (dragging == false && currentRing.Count != 0)
+        {
+            foreach (DragHandler dragHandler in images)
+            {
+				if (!currentRing.Contains (dragHandler)) {
+					if (!dragHandler.missing && dragHandler.movable) {
+						dragHandler.GetComponent<Image> ().color = dragHandler.defaultColor;
+					}
+				} 
+            }
+            currentRing.Clear();
+        }
+
+        //////////////////////////////////////////////////////////////////////////////////////
+        if(GameManager.Instance != null)
+        {
+            if (GameManager.Instance.CollarGot)
+            {
+                AddMissingPiece(1);
+            }
+            if (GameManager.Instance.KeyGot)
+            {
+                AddMissingPiece(2);
+            }
+            if (GameManager.Instance.PhoneGot)
+            {
+                AddMissingPiece(3);
+            }
+        }
+       
+        ///////////////////////////////////////////////////////////////////////////////////////////
+    }
 
     //FUNCTION TO MOVE IN HIERARCHY (in order to control the rendering order)
     public void MoveInHierarchy(int delta)
@@ -109,7 +172,7 @@ public class Script_CanvasSystem : MonoBehaviour
     }
 
     // -------------------------- Added by Isabelle -------------------------- //
-    public void AddMissingPiece(int newPiece)   // Called when the player gets one of the missing piece of this puzzle. 1 for the outer ring - 2 for the middle ring - 3 for the inner ring
+    public void AddMissingPiece(int newPiece)   // Called when the player gets one of the missing piece of this puzzle. 1 for the outter ring - 2 for the middle ring - 3 for the inner ring
     {
         foreach (DragHandler image in images)
         {
